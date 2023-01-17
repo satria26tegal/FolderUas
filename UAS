@@ -1,0 +1,64 @@
+package UASalgoo;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CGV {
+
+
+    public static void main(String[] args) {
+        int jumUser = 20;
+        Scanner sc = new Scanner(System.in);
+        ArrayList<CGV> nontonApa = new ArrayList<>();
+        System.out.println("Filem yang akan ditoton : ");
+        String movieSelect = sc .nextLine();
+        ArrayList<String> myUser1 = new ArrayList<>();
+        CGV pesanan = new CGV();
+        for(int index=0; index<jumUser;index++){
+            System.out.println("Nama User : ");
+            String myUser = sc .nextLine();
+            myUser1.add(myUser);
+            pesanan .setIDMovie("1");
+            pesanan .setJumTiket(jumUser);
+            pesanan .setMovieName(movieSelect);
+            pesanan .setMoviePrice(55000);
+            pesanan .setUserrname(myUser);
+            nontonApa .add(pesanan);
+            System.out.println("Nama penonton " + myUser);
+            jumUser--;
+            System.out.println("sisa tiket " +jumUser);
+            System.out.println("room bioskop "+"1");
+            System.out.println("film yang di tonton "+movieSelect);
+            System.out.println("harga tiket "+55000);
+        }
+        for (int index = 0;index<jumUser;index++){
+            System.out.println( "data penonton" +myUser1);
+        }
+        pesanan.TotalJUmlahPenonton(nontonApa, "Avatar");
+    }
+
+
+
+
+    private void TotalJUmlahPenonton(ArrayList<CGV> nontonApa, String avatar) {
+    }
+
+    private void setUserrname(String myUser) {
+    }
+
+    private void setMovieName(String movieSelect) {
+    }
+
+    private void setMoviePrice(int i) {
+    }
+
+    private void setJumTiket(int jumUser) {
+    }
+
+    private void setIDMovie(String s) {
+    }
+
+}
+
+
+
